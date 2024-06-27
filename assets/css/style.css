@@ -31,15 +31,17 @@ ul{
 
    
 }
-.nav ul li a{
+.nav>ul>li>a{
     text-decoration: none;
     padding: 25px;
+    color: rgb(10, 11, 11);
 }
 .footer{
     color: rgb(4, 11, 17);
     bottom: 5px;
     
-    left: 45em;
+    display: flex;
+    justify-content: center;
 }
  .logo img {
     display: flex;
@@ -51,4 +53,32 @@ header{
     padding: 15px;
     background-color: whitesmoke;
     box-shadow: 15px;
+}
+
+.nav li{
+    position: relative;
+} 
+
+
+.sub-menu {
+    display: none;
+   position: absolute;
+   padding: 12px;
+   border-radius: 3px;
+   box-shadow: 0px 1px 0px #7ca69f;
+   top:20px;
+   width: 150px;
+   z-index: 100;
+
+    
+}
+.sub-menu li a{
+    display: block;
+    text-decoration: none;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.nav li:hover .sub-menu{
+    display: block;
 }
